@@ -2,7 +2,7 @@
 
 div {
     color: white;
-    background-color: black;
+    background-color: #fffaf3;
 
 }
 
@@ -21,6 +21,13 @@ h1{
     font-size:36px;
     margin-bottom: 10px;
 }
+
+h4{
+    color:#e67e22;
+    font-size:36px;
+    margin-bottom: 10px;
+}
+
 p{
     color:#333;
     font-size: 20px;
@@ -29,12 +36,12 @@ p{
     
 }
 img{
-    width: 80%;
+    width: 100%;
     max-width: 500px;
     height: auto;
     border-radius: 12px;
     margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: block;
 }
 .fit-image {
@@ -46,4 +53,73 @@ img{
 }
 .center-text{
     text-align:center;
+}
+nav{
+    background-color: #fffaf3;
+    padding:1em;
+}
+
+nav ul{
+    list-style:none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0.75em 0;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-right: 1px solid #fff;
+}
+
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #ffd700;
+}
+
+
+.recipe-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20 px 0;
+}
+
+.recipe-card {
+    text-align: center;
+}
+
+.recipe-card img {
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.recipe-card > a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color:blue;
+}
+
+.recipe-card > a:hover {
+    color: #6a5acd;
+}
+
+header nav,
+body > nav {
+    background-color:#6a5acd
+    padding: 1em;
 }
