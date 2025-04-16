@@ -135,3 +135,54 @@ body > nav {
     padding: 1em;
 }
 
+footer {
+    background-color: #fffaf3;
+    color: blue;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1, h4, p {
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+main, .card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: white;
+}
+
+a:hover, button:hover {
+    background-color: #f04e23;/* Orange colour on hover */
+    color: white;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* For smooth image corners */
+}
+
+
