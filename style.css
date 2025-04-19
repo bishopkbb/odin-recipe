@@ -2,35 +2,36 @@
 
 div {
     color: white;
-    background-color: #fffaf3;
+    background-color: transparent;
 
 }
 
 p {
-   color: red; 
+   color: white; 
 }
 body {
-    background-color:#fffaf3;
+    background-color:transparent;
     font-family: 'segoe UI', sans-serif;
     margin:0;
     padding:20px;
     text-align:center;
 }
 h1{
-    color:#e67e22;
-    font-size:36px;
+    color:white;
+    font-size:40px;
     margin-bottom: 10px;
 }
 
-h4{
-    color:#e67e22;
-    font-size:36px;
+
+h3{
+    color:white;
+    font-size:30px;
     margin-bottom: 10px;
 }
 
 p{
     color:#333;
-    font-size: 20px;
+    font-size: 25px;
     max-width 700px;
     margin:auto;
     
@@ -55,7 +56,7 @@ img{
     text-align:center;
 }
 nav{
-    background-color: #fffaf3;
+    background-color: transparent;
     padding:1em;
 }
 
@@ -91,7 +92,7 @@ nav ul li img {
 
 
 nav ul li a:hover {
-    background-color: #fff;
+    background-color: transparent;
     color: #ffd700;
     filter: brightness(1.2);
 }
@@ -122,7 +123,7 @@ nav ul li a:hover {
     margin-top: 10px;
     text-decoration: none;
     font-weight: bold;
-    color:blue;
+    color:white;
 }
 
 .recipe-card > a:hover {
@@ -136,8 +137,8 @@ body > nav {
 }
 
 footer {
-    background-color: #fffaf3;
-    color: blue;
+    background-color: transparent;
+    color: red;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
@@ -168,7 +169,7 @@ main, .card {
 }
 
 a:hover, button:hover {
-    background-color: #f04e23;/* Orange colour on hover */
+    background-color: black;/* Orange colour on hover */
     color: white;
     transform: scale(1.05);
     transition: 0.3s ease;
@@ -185,4 +186,245 @@ img {
     border-radius: 8px; /* For smooth image corners */
 }
 
+/* Fade In */
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+.fade-in {
+    animation: fadeIn 5s ease-in;
+    animation-iteration-count: infinite;
+}
 
+/* Zoom In */
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0;}
+    to { transform: scale(1); opacity:1,}
+}
+
+.zoom-in {
+    animation: zoomIn 5s ease-out;
+    animation-iteration-count: infinite;
+}
+
+/* Slide In from Bottom */
+@keyframes slideInUp {
+    from { transform: translateY(100%); opacity: 0;}
+    to { transform: translateY(0); opacity:1;}
+}
+
+.slide-in {
+    animation: slideInUp 10s ease-out;
+    animation-iteration-count: infinite;
+}
+
+
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Arial, Verdana, sans-serif;
+    background-image: url(kingwoman.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:#fff;
+    margin: 0;
+}
+
+body * {
+    color:white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    box-sizing:border-box;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 0px rgba(0,0,0,0.3); 
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+
+.overlay {
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.logo-img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 40px;
+    text-shadow: 2px 2px 4px black;
+    margin: 0;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    font-size:48px;
+    font-weight: bold;
+    animation: bounce 10s infinite;
+    text-shadow: 2px 2px 4px black;
+    text-align: left;
+    margin: 20px;
+}
+
+@keyframes bounce {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+.contact-section {
+    max-width:600px;
+    margin:50px auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: black;
+}
+
+.contact-section button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.contact-section button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+/* Dropdown Button*/
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 12px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (Hidden by Default) */
+.drodown-content {
+    display:none;
+    position:absolute;
+    background-color:transparent;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 6px;
+    box-shadow: 0px 9px 16px rgba(0,0,0,0.2),
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* change color on hover */
+.dropdown-content a:hover {
+    background-color: #ddd,
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+    color: black;
+}
+
+.mobile-nav {
+    background-color: transparent;
+    padding:10px;
+    position: relative;
+}
+.menu-toggle {
+    font-size: 20px;
+    cursor:pointer;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.menu-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: none;
+}
+
+.menu-links li {
+    margin: 10px 0;
+}
+
+.menu-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16ps;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.menu-links li a:hover {
+    background-color: transparent;
+}

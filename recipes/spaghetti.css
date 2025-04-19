@@ -1,0 +1,105 @@
+
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(spagbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:#fff
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 0px rgba(0,0,0,0.3); 
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo-img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 40px;
+    text-shadow: 2px 2px 4px black;
+    margin: 0;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    font-size:48px;
+    font-weight: bold;
+    animation: bounce 2s infinite;
+    text-shadow: 2px 2px 4px black;
+    text-align: left;
+    margin: 20px;
+}
+
+@keyframes bounce {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+.mobile-nav {
+    background-color: transparent;
+    padding:10px;
+    position: relative;
+}
+.menu-toggle {
+    font-size: 20px;
+    cursor:pointer;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.menu-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+}
+
+.menu-links li {
+    margin: 10px 0;
+}
+
+.menu-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16ps;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.menu-links li a:hover {
+    background-color: transparent;
+}
+

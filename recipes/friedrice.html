@@ -4,13 +4,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial scale=1.0">
         <title>King woman's Fried Rice Recipe</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="friedrice.css">
     </head>
     <body>
-        <nav>
+        <header>
+            <div class="logo-container">
+            <img src="../logo.png" alt="Kingwoman Logo" class="logo-img">
+            <h1 class="logo-text">Kingwoman Home of Food Recipes</h1>
+            </div>
+            </header>
+
+            <main>
         <a href="../index.html">Home</a>
         <h1>King Woman'Fried rice and Chicken</h1>
-        <img src="friedrice.jpg" alt="King Woman's Fried rice" width="400">
+        
         <p>This fried rice is a classic nigerian fried rice dish packed with veggies and a flavourful mix of spices. perfect for parties and Sunday delicacies</p>
         <h2>INGREDIENTS</h2>
         <ul>
@@ -33,7 +40,21 @@
             <li>heat oil in the same skillet. Add onion: cook and stir until soft, about 3 minutes. stir in rice, chicken, soy sauce, and pepper. Cook and stir for about 5 minutes; stir in shredded egg. Serve hot</li><br>
             <img src="heat.jpg" alt="fried rice and chicken" width="300"><br>
         </ol>
+        </main>
+    </div>
         </nav>
+
+        <script>
+            function toggleMenu() {
+                var menu =
+                document.getElementById("menuLinks");
+                if (menu.style.display ==="block") {
+                    menu.style.display = "none";
+                } else {
+                    menu.style.display = "block";
+                }
+            }
+           </script>     
         
 
     </body>

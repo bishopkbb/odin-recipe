@@ -8,11 +8,32 @@
         <link rel="stylesheet" href="style.css"><!--link to css file-->
     </head>
     <body>
-        <nav>
-            <h1>King Woman's Home of Food Recipes!</h1>
-            <a href="index.html"><img src="kingwoman.jpg" alt="Home logo" class="fit-image"></a>
-                <h1>Welcome to Kingwoman's Home of Food Recipe</h1>
-                <p>Select a Recipe Below</p>
+        <header>
+            <div class="logo-container">
+            <img src="logo.png" alt="Kingwoman Logo" class="logo-img">
+            <h1 class="logo-text">Kingwoman Home of Food Recipes</h1>
+            </div>
+            
+                
+            
+        </header>
+        <nav class="mobile-nav">
+            <div class="menu-toggle"
+            onclick="togleMenu()"></div>
+            <ul class="menu-links" id="menuLinks">
+                    <a href="index.html">Home</a>
+                    <a href="recipes/Spaghetti.html">Spaghetti</a>
+                    <a href="recipes/friedrice.html">Fried Rice</a>
+                    <a href="recipes/akara.html">Akara and Pap</a>
+                    
+                    </ul>
+            <div class="overlay">
+            
+            
+            <h1 class="slide-in">Welcome!</h1>
+            
+                <h3>The realm of delicious food recipes</h3>
+                <p class="fade-in">Select a Recipe Below</p>
                 <div class="recipe-container">
                     <div class="recipe-card">
             <img src="food.jpg" alt="stir-fried Spaghetti">
@@ -27,10 +48,15 @@
                             <div class="recipe-card">
             <img src="ogi.jpg" alt="kingwoman's akara and pap">
             <a href=recipes/akara.html>King Woman's Akara</a>
+            
+                    </div>
+                    </div>
                     </div>
             </nav>
-            <footer>
-                <P>&copy; 2025 BishopKbb. All rights reserved. </P>
+
+            <a href="contact.html">Contact us</a>
+            <footer class="slide-in">
+                &copy; 2025 BishopKbb. All rights reserved
                 </footer>
             
             
@@ -39,7 +65,17 @@
 
             
         
-            
+       <script>
+        function toggleMenu() {
+            var menu =
+            document.getElementById("menuLinks");
+            if (menu.style.display ==="block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+       </script>     
 
     </body>
 </html>
