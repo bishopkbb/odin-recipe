@@ -477,3 +477,21 @@ img {
     max-width: 1200px;
     margin: auto;
 }
+
+.socials {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.socials a {
+    color:#fff;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.socials a:hover {
+    transform: scale(1.2);
+    color:black; 
+}
