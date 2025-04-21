@@ -38,7 +38,7 @@ p{
 }
 img{
     width: 100%;
-    max-width: 100px;
+    max-width: 300px;
     height: auto;
     border-radius: 12px;
     margin: 20px auto;
@@ -181,7 +181,8 @@ body {
 }
 
 img {
-    max-width: 100%;
+    WIDTH:100%;
+    max-width: 300px;
     height: auto;
     border-radius: 8px; /* For smooth image corners */
 }
@@ -435,10 +436,19 @@ h1, h2, p {
         align-items: flex-start;
     }
 
+    .nav-links a {
+        display:block;
+        margin: 10px 0;
+    } 
+
 
 nav a {
     width: 100%;
     padding: 15px 10px;
+}
+
+.logo {
+    text-align: left;
 }
 
 img {
@@ -494,4 +504,50 @@ img {
 .socials a:hover {
     transform: scale(1.2);
     color:black; 
+}
+
+body.dark-mode {
+    background-color:#121212;
+    color:#ffffff;
+}
+
+nav.dark-mode {
+    background-color: #1e1e1e;
+}
+
+footer.dark-mode {
+    background-color:#1e1e1e;
+}
+
+.card.dark-mode {
+    background-color: #222;
+    box-shadow: 0 0 10px #ffffff33;
+}
+
+.testimonial-card {
+    background-color: transparent;
+    padding: 2rem;
+    text-align: center;
+}
+
+.testimonial-card {
+    background: transparent;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4CAF50;
+    border-radius: 8px;
+    display: none;
+}
+
+#preloader {
+    background: #fff
+    url('https://i.gifer.com/ZZ5H.gif') no-repeat center
+    center; 
+    background-size: 100px 100px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
 }

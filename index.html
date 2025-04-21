@@ -2,12 +2,14 @@
 <html lang="eng">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta htto-equiv="X-UA-Compatible" content="ie=edge">
         <title>King Woman Recipe</title>
         <link rel="stylesheet"  href="style.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><!--link to css file-->
+        <link rel="icon" href="fav.png" type="image/png">
     </head>
+    <div id="preloader"></div>
     <body>
         <header>
             <div class="logo-container">
@@ -15,6 +17,8 @@
             <img src="logo.png" alt="Kingwoman Logo" class="logo-img"></a>
             <h1 class="logo-text">Kingwoman Home of Food Recipes</h1>
             </div>
+
+            <button id="darkModeToggle">Toggle Dark Mode</button>
             
                 
             
@@ -67,6 +71,19 @@
                 <a href="https://wa.me/2349068730389" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
             </div>
+
+            <section class="testimonials">
+                <h2>What People Are Saying</h2>
+                <div class="testimonial-card">
+                    <p>"This recipe site changed my kitchen game!"</p>
+                    <h4>- Aisha,Lagos</h4>
+                </div>
+
+                <div class="testimonial-card">
+                    <p>"Easy to use and Delicious meals!"</p>
+                    <h4>- Chuka,Abuja</h4>
+                </div>
+            </section>
             <footer class="slide-in">
                 &copy; 2025 BishopKbb. All rights reserved
                 </footer>
@@ -87,7 +104,29 @@
                 menu.style.display = "block";
             }
         }
-       </script>     
+       </script>
+       
+       <script>
+        const toggleButton = 
+        document.getElementById('darkModeToggle');
+        toggleButton.addEventListener('click'),() => {
+            document.body.classList.toggle('dark-mode');
+
+            document.querySelector('nav')?.classList.toggle('dark-mode');
+
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card =>
+                card.classList.toggle('dark-mode'));
+        };
+       </script>
+
+       <script>
+        window.addEventListener('load', () => {
+
+            document.getElementById('preloader').style.display
+            = 'none';
+        });
+       </script>
 
     </body>
 </html>
